@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+
+      <head>
+         <meta charset="UTF-8">
+         <title>Survey Form</title>
+         <link rel="stylesheet" type="text/css" href="survey-form.css">
+      </head>
+
+
+      <body>
+      	
+            <h1 id="title">Survey Form</h1>
+        <div id="innerform">
+            <p id="description">Let us know how we can improve freeCodeCamp</p>
+
+            <form id="survey-form">
+              <div id="rowtab">
+            	<div id="lefttab">
+            		<label id="name-label">*Name: </label>
+            	</div>
+            	<div id="righttab">
+            		<label><input type="text" id="name" class="input-field" placeholder="Enter yout name"required> </label> 
+            	</div>
+              </div> 
+
+              <div id="rowtab">
+                  <div id="lefttab">  
+                 	 <label id="email-label">*Email: </label>
+                  </div>
+
+            	  <div id="righttab">
+            	 	 <label><input type="text" id="email"class="input-field" placeholder="Enter yout Email"required></label>
+            	  </div>
+              </div>
+
+
+              <div id="rowtab">
+              	  <div id="lefttab">
+            	      <label id="number-label">*Age: </label>
+            	  </div>
+
+            	  <div id="righttab">
+            	     <label><input type="number"class="input-field" id="number" placeholder="Age"></label>
+            	  </div>
+               </div>
+
+
+                <div id="rowtab">
+                    <div id="lefttab"> 
+                          <p>Which option best describes your current role?</p>
+                    </div>
+                    <div id="righttab" >
+                          <select id="dropdown" class="dropdown">
+                	          <option disabled value>Select an option</option>
+                	          <option value="student">Student</option>
+                	          <option value="job">Full time job</option>
+                	          <option value="learner">Full time Learner</option>
+                	          <option value="prefer">Prefer not to say</option>
+                	          <option value="others">Others</option>
+                          </select>
+                    </div>
+                 </div>
+
+                 <div id="rowtab">
+
+                   	<div id="lefttab">
+                           <label >* How likely is that you would recommend freeCodeCamp to a friend?</label>
+                 	  </div>
+
+                 	  <div id="righttab" >
+                      <ul style="list-style:none">
+                        <li class="radio"><label>Definitely<input name="radio-buttons" type="radio" value="1" class="userRatings"></label></li>
+                        <li class="radio"><label>Maybe<input name="radio-buttons" type="radio" value="2" class="userRatings"></label></li>
+                        <li class="radio"><label>Not Sure<input name="radio-buttons" type="radio" value="3" class="userRatings"></label></li>
+                      </ul>
+                 	  </div>
+                 </div>
+
+                  <div id="rowtab">
+                    <div id="lefttab"> 
+                          <label>What do you like most in FCC:</label>
+                    </div>
+                    <div id="righttab">
+                          <select id="dropdown" class="dropdown">
+                            <option disabled value>Select an Option</option>
+                            <option value="challenges">challenges</option>
+                            <option value="projects">Projects</option>
+                            <option value="community">Community</option>
+                            <option value="opemsource">Open Source</option>
+                          </select>
+                    </div>
+                 </div>
+
+                 <div id="rowtab">
+
+                    <div id="lefttab">
+                           <label >Things that should be improved in the future<br>
+                                  (Check all that apply):</label>
+                    </div>
+
+                    <div id="righttab" >
+                      <ul style="list-style:none">
+                        <li class="checkbox"><label><input type="checkbox" value="front-end" class="userRatings">Front-end Projects</label></li>
+                        <li class="checkbox"><label><input type="checkbox" value="back-end" class="userRatings">Back-end Projects</label></li>
+                        <li class="checkbox"><label><input type="checkbox" value="data Visualization" class="userRatings">Data Visualization</label></li>
+                        <li class="checkbox"><label><input type="checkbox" value="challenges" class="userRatings">Challenges</label></li>
+                        <li class="checkbox"><label><input type="checkbox" value="opensource" class="userRatings">Open Source Community</label></li>
+                        <li class="checkbox"><label><input type="checkbox" value="Gitter" class="userRatings">Gitter help rooms</label></li>
+                        <li class="checkbox"><label><input type="checkbox" value="Videos" class="userRatings">Videos</label></li>
+                        <li class="checkbox"><label><input type="checkbox" value="meetips" class="userRatings">City Meetups</label></li>
+                        <li class="checkbox"><label><input type="checkbox" value="wiki" class="userRatings">Wiki</label></li>
+                        <li class="checkbox"><label><input type="checkbox" value="forum" class="userRatings">Forum</label></li>
+                        <li class="checkbox"><label><input type="checkbox" value="additional Courses" class="userRatings">Additional Courses</label></li>
+                      </ul>
+                    </div>
+                 </div>
+
+
+                  <div id="rowtab">
+                      <div id="lefttab">
+                          <label>Any Comments or Suggestions? </label>
+                      </div>
+
+                      <div id="righttab">
+                            <label><textarea id="comment" class="input-field" style="height:50px;resize:vertical;" placeholder="Enter your comment here..."></textarea></label>
+                       </div>
+                  </div>
+
+                    <button id="submit" type="submit">Submit</button>
+            </form>
+        </div>
+      </body>
+
+</html>
